@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#16222a , #3a6073);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.container
+{
+    width: 40%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.container .text{
+    display: none;
+}
+.container h1{
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+}
+.container p
+{
+   color: white;
+   font-size: 25px;
+}
+body::after{
+    content: "";
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.336);
+    position: absolute;
+    clip-path: circle(40% at right 95%);
+    z-index: -1;
+}
+body::before
+{
+    content: "";
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 255, 255, 0.336);
+    position: absolute;
+    clip-path: circle(40% at left 5%);
+    z-index: -1;
+}
+form input{
+    width: 70%;
+    padding: 5px 20px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    margin: 40px 0;
+    text-align: end;
+    box-shadow: 0 0 10px black;
+    background-color: rgba(255, 255, 255, 0.836);
+    z-index: 1000;
+
+ 
+}
+form .one ,.mmm ,.moo {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.836);
+    height: 30px;
+    width: 70px;
+    border: none;
+    box-shadow: 0 0 10px white;
+    border-radius:6px ;
+    transition: all 0.2s;
+}
+.mooo{
+    
+    color: black;
+    background-color: rgba(255, 255, 255, 0.836);
+    height: 30px;
+    width: 70px;
+    border: none;
+    box-shadow: 0 0 10px white;
+    border-radius:6px;
+}
+.pp , .pp2{
+    display: none;
+
+}
+.zz , .zz1{
+    display: none;
+ transition: all 0.3s;
+}
+a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius:6px;
+    box-shadow: 0 0 400px white;
+}
+.zz2{
+    display: none;
+}
+.one:hover{
+    background-color: #3a6073;
+    color: white;
+    box-shadow: 0 0 20000px 80px white;
+}
+.one:hover input
+{
+background-color: black;
+}
+@media (max-width:950px) {
+    .container p{
+        font-size: 20px;
+    }
+    .container h1{
+        font-size: 22px;
+    }
+}
